@@ -490,7 +490,8 @@
         function pop_borders_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['zone_number'] !== null ? autolinker.link(feature.properties['zone_number'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Номер зоны</th>\
+                        <td>' + (feature.properties['zone_number'] !== null ? autolinker.link(feature.properties['zone_number'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Название зоны</th>\
