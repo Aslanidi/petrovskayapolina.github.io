@@ -1,2 +1,2 @@
 # petrovskayapolina.github.io
-My first git project
+This is my architecture portfolio.
