@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
-        
         <style>
         html, body, #map {
             width: 100%;
@@ -18,7 +17,7 @@
             margin: 0;
         }
         </style>
-        <title>Интерактивная карта Красноярска</title>
+        <title></title>
     </head>
     <body>
         <div id="map">
@@ -33,13 +32,12 @@
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/1.js"></script>
-        <script src="data/2.js"></script>
-        <script src="data/3.js"></script>
-        <script src="data/4.js"></script>
-        <script src="data/5.js"></script>
-        <script src="data/6.js"></script>
-        <script src="js/leaflet-providers.js"></script>
+        <script src="data/KDIndex_1.js"></script>
+        <script src="data/KDStatus_2.js"></script>
+        <script src="data/KDCost2_3.js"></script>
+        <script src="data/KDCost_4.js"></script>
+        <script src="data/KDArea_5.js"></script>
+        <script src="data/Buildings_6.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -75,7 +73,7 @@
         });
         layer_OSMStandard_0;
         map.addLayer(layer_OSMStandard_0);
-        function pop__1(feature, layer) {
+        function pop_KDIndex_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Индекс</th>\
@@ -85,11 +83,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__1_0(feature) {
+        function style_KDIndex_1_0(feature) {
             switch(String(feature.properties['UTL_ID'])) {
                 case '003002000000':
                     return {
-                pane: 'pane__1',
+                pane: 'pane_KDIndex_1',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -99,7 +97,7 @@
                     break;
                 case '003008000000':
                     return {
-                pane: 'pane__1',
+                pane: 'pane_KDIndex_1',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -109,7 +107,7 @@
                     break;
                 case 'None':
                     return {
-                pane: 'pane__1',
+                pane: 'pane_KDIndex_1',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -119,7 +117,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane__1',
+                pane: 'pane_KDIndex_1',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -129,21 +127,21 @@
                     break;
             }
         }
-        map.createPane('pane__1');
-        map.getPane('pane__1').style.zIndex = 401;
-        map.getPane('pane__1').style['mix-blend-mode'] = 'normal';
-        var layer__1 = new L.geoJson(json__1, {
+        map.createPane('pane_KDIndex_1');
+        map.getPane('pane_KDIndex_1').style.zIndex = 401;
+        map.getPane('pane_KDIndex_1').style['mix-blend-mode'] = 'normal';
+        var layer_KDIndex_1 = new L.geoJson(json_KDIndex_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__1',
-            layerName: 'layer__1',
-            pane: 'pane__1',
-            onEachFeature: pop__1,
-            style: style__1_0,
+            dataVar: 'json_KDIndex_1',
+            layerName: 'layer_KDIndex_1',
+            pane: 'pane_KDIndex_1',
+            onEachFeature: pop_KDIndex_1,
+            style: style_KDIndex_1_0,
         });
-        bounds_group.addLayer(layer__1);
-        map.addLayer(layer__1);
-        function pop__2(feature, layer) {
+        bounds_group.addLayer(layer_KDIndex_1);
+        map.addLayer(layer_KDIndex_1);
+        function pop_KDStatus_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Статус</th>\
@@ -153,11 +151,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__2_0(feature) {
+        function style_KDStatus_2_0(feature) {
             switch(String(feature.properties['STATUS'])) {
                 case '1':
                     return {
-                pane: 'pane__2',
+                pane: 'pane_KDStatus_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -167,7 +165,7 @@
                     break;
                 case '5':
                     return {
-                pane: 'pane__2',
+                pane: 'pane_KDStatus_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -177,7 +175,7 @@
                     break;
                 case '6':
                     return {
-                pane: 'pane__2',
+                pane: 'pane_KDStatus_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -187,7 +185,7 @@
                     break;
                 default:
                     return {
-                pane: 'pane__2',
+                pane: 'pane_KDStatus_2',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -197,21 +195,21 @@
                     break;
             }
         }
-        map.createPane('pane__2');
-        map.getPane('pane__2').style.zIndex = 402;
-        map.getPane('pane__2').style['mix-blend-mode'] = 'normal';
-        var layer__2 = new L.geoJson(json__2, {
+        map.createPane('pane_KDStatus_2');
+        map.getPane('pane_KDStatus_2').style.zIndex = 402;
+        map.getPane('pane_KDStatus_2').style['mix-blend-mode'] = 'normal';
+        var layer_KDStatus_2 = new L.geoJson(json_KDStatus_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__2',
-            layerName: 'layer__2',
-            pane: 'pane__2',
-            onEachFeature: pop__2,
-            style: style__2_0,
+            dataVar: 'json_KDStatus_2',
+            layerName: 'layer_KDStatus_2',
+            pane: 'pane_KDStatus_2',
+            onEachFeature: pop_KDStatus_2,
+            style: style_KDStatus_2_0,
         });
-        bounds_group.addLayer(layer__2);
-        map.addLayer(layer__2);
-        function pop__3(feature, layer) {
+        bounds_group.addLayer(layer_KDStatus_2);
+        map.addLayer(layer_KDStatus_2);
+        function pop_KDCost2_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Удельная стоимость</th>\
@@ -221,10 +219,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__3_0(feature) {
+        function style_KDCost2_3_0(feature) {
             if (feature.properties['areacost'] >= 1.000000 && feature.properties['areacost'] <= 13133489.400000 ) {
                 return {
-                pane: 'pane__3',
+                pane: 'pane_KDCost2_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -234,7 +232,7 @@
             }
             if (feature.properties['areacost'] >= 13133489.400000 && feature.properties['areacost'] <= 46849531.090000 ) {
                 return {
-                pane: 'pane__3',
+                pane: 'pane_KDCost2_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -244,7 +242,7 @@
             }
             if (feature.properties['areacost'] >= 46849531.090000 && feature.properties['areacost'] <= 114596349.000000 ) {
                 return {
-                pane: 'pane__3',
+                pane: 'pane_KDCost2_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -254,7 +252,7 @@
             }
             if (feature.properties['areacost'] >= 114596349.000000 && feature.properties['areacost'] <= 251114400.000000 ) {
                 return {
-                pane: 'pane__3',
+                pane: 'pane_KDCost2_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -264,7 +262,7 @@
             }
             if (feature.properties['areacost'] >= 251114400.000000 && feature.properties['areacost'] <= 830122278.400000 ) {
                 return {
-                pane: 'pane__3',
+                pane: 'pane_KDCost2_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -273,21 +271,21 @@
             }
             }
         }
-        map.createPane('pane__3');
-        map.getPane('pane__3').style.zIndex = 403;
-        map.getPane('pane__3').style['mix-blend-mode'] = 'normal';
-        var layer__3 = new L.geoJson(json__3, {
+        map.createPane('pane_KDCost2_3');
+        map.getPane('pane_KDCost2_3').style.zIndex = 403;
+        map.getPane('pane_KDCost2_3').style['mix-blend-mode'] = 'normal';
+        var layer_KDCost2_3 = new L.geoJson(json_KDCost2_3, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__3',
-            layerName: 'layer__3',
-            pane: 'pane__3',
-            onEachFeature: pop__3,
-            style: style__3_0,
+            dataVar: 'json_KDCost2_3',
+            layerName: 'layer_KDCost2_3',
+            pane: 'pane_KDCost2_3',
+            onEachFeature: pop_KDCost2_3,
+            style: style_KDCost2_3_0,
         });
-        bounds_group.addLayer(layer__3);
-        map.addLayer(layer__3);
-        function pop__4(feature, layer) {
+        bounds_group.addLayer(layer_KDCost2_3);
+        map.addLayer(layer_KDCost2_3);
+        function pop_KDCost_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Стоимость</th>\
@@ -297,10 +295,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__4_0(feature) {
+        function style_KDCost_4_0(feature) {
             if (feature.properties['cost'] >= 1.000000 && feature.properties['cost'] <= 13133489.400000 ) {
                 return {
-                pane: 'pane__4',
+                pane: 'pane_KDCost_4',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -310,7 +308,7 @@
             }
             if (feature.properties['cost'] >= 13133489.400000 && feature.properties['cost'] <= 46849531.090000 ) {
                 return {
-                pane: 'pane__4',
+                pane: 'pane_KDCost_4',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -320,7 +318,7 @@
             }
             if (feature.properties['cost'] >= 46849531.090000 && feature.properties['cost'] <= 114596349.000000 ) {
                 return {
-                pane: 'pane__4',
+                pane: 'pane_KDCost_4',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -330,7 +328,7 @@
             }
             if (feature.properties['cost'] >= 114596349.000000 && feature.properties['cost'] <= 251114400.000000 ) {
                 return {
-                pane: 'pane__4',
+                pane: 'pane_KDCost_4',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -340,7 +338,7 @@
             }
             if (feature.properties['cost'] >= 251114400.000000 && feature.properties['cost'] <= 830122278.400000 ) {
                 return {
-                pane: 'pane__4',
+                pane: 'pane_KDCost_4',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -349,21 +347,21 @@
             }
             }
         }
-        map.createPane('pane__4');
-        map.getPane('pane__4').style.zIndex = 404;
-        map.getPane('pane__4').style['mix-blend-mode'] = 'normal';
-        var layer__4 = new L.geoJson(json__4, {
+        map.createPane('pane_KDCost_4');
+        map.getPane('pane_KDCost_4').style.zIndex = 404;
+        map.getPane('pane_KDCost_4').style['mix-blend-mode'] = 'normal';
+        var layer_KDCost_4 = new L.geoJson(json_KDCost_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__4',
-            layerName: 'layer__4',
-            pane: 'pane__4',
-            onEachFeature: pop__4,
-            style: style__4_0,
+            dataVar: 'json_KDCost_4',
+            layerName: 'layer_KDCost_4',
+            pane: 'pane_KDCost_4',
+            onEachFeature: pop_KDCost_4,
+            style: style_KDCost_4_0,
         });
-        bounds_group.addLayer(layer__4);
-        map.addLayer(layer__4);
-        function pop__5(feature, layer) {
+        bounds_group.addLayer(layer_KDCost_4);
+        map.addLayer(layer_KDCost_4);
+        function pop_KDArea_5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Площадь </th>\
@@ -373,10 +371,10 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__5_0(feature) {
+        function style_KDArea_5_0(feature) {
             if (feature.properties['AREA'] >= 1.000000 && feature.properties['AREA'] <= 1216.000000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -386,7 +384,7 @@
             }
             if (feature.properties['AREA'] >= 1216.000000 && feature.properties['AREA'] <= 3751.000000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -396,7 +394,7 @@
             }
             if (feature.properties['AREA'] >= 3751.000000 && feature.properties['AREA'] <= 7821.000000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -406,7 +404,7 @@
             }
             if (feature.properties['AREA'] >= 7821.000000 && feature.properties['AREA'] <= 13204.540000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -416,7 +414,7 @@
             }
             if (feature.properties['AREA'] >= 13204.540000 && feature.properties['AREA'] <= 19418.240000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -426,7 +424,7 @@
             }
             if (feature.properties['AREA'] >= 19418.240000 && feature.properties['AREA'] <= 27502.000000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -436,7 +434,7 @@
             }
             if (feature.properties['AREA'] >= 27502.000000 && feature.properties['AREA'] <= 39987.100000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -446,7 +444,7 @@
             }
             if (feature.properties['AREA'] >= 39987.100000 && feature.properties['AREA'] <= 53079.000000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -456,7 +454,7 @@
             }
             if (feature.properties['AREA'] >= 53079.000000 && feature.properties['AREA'] <= 132746.190000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -466,7 +464,7 @@
             }
             if (feature.properties['AREA'] >= 132746.190000 && feature.properties['AREA'] <= 160232.000000 ) {
                 return {
-                pane: 'pane__5',
+                pane: 'pane_KDArea_5',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -475,21 +473,21 @@
             }
             }
         }
-        map.createPane('pane__5');
-        map.getPane('pane__5').style.zIndex = 405;
-        map.getPane('pane__5').style['mix-blend-mode'] = 'normal';
-        var layer__5 = new L.geoJson(json__5, {
+        map.createPane('pane_KDArea_5');
+        map.getPane('pane_KDArea_5').style.zIndex = 405;
+        map.getPane('pane_KDArea_5').style['mix-blend-mode'] = 'normal';
+        var layer_KDArea_5 = new L.geoJson(json_KDArea_5, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__5',
-            layerName: 'layer__5',
-            pane: 'pane__5',
-            onEachFeature: pop__5,
-            style: style__5_0,
+            dataVar: 'json_KDArea_5',
+            layerName: 'layer_KDArea_5',
+            pane: 'pane_KDArea_5',
+            onEachFeature: pop_KDArea_5,
+            style: style_KDArea_5_0,
         });
-        bounds_group.addLayer(layer__5);
-        map.addLayer(layer__5);
-        function pop__6(feature, layer) {
+        bounds_group.addLayer(layer_KDArea_5);
+        map.addLayer(layer_KDArea_5);
+        function pop_Buildings_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">Адрес</th>\
@@ -523,9 +521,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style__6_0() {
+        function style_Buildings_6_0() {
             return {
-                pane: 'pane__6',
+                pane: 'pane_Buildings_6',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -538,22 +536,22 @@
                 interactive: true,
             }
         }
-        map.createPane('pane__6');
-        map.getPane('pane__6').style.zIndex = 406;
-        map.getPane('pane__6').style['mix-blend-mode'] = 'normal';
-        var layer__6 = new L.geoJson(json__6, {
+        map.createPane('pane_Buildings_6');
+        map.getPane('pane_Buildings_6').style.zIndex = 406;
+        map.getPane('pane_Buildings_6').style['mix-blend-mode'] = 'normal';
+        var layer_Buildings_6 = new L.geoJson(json_Buildings_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json__6',
-            layerName: 'layer__6',
-            pane: 'pane__6',
-            onEachFeature: pop__6,
-            style: style__6_0,
+            dataVar: 'json_Buildings_6',
+            layerName: 'layer_Buildings_6',
+            pane: 'pane_Buildings_6',
+            onEachFeature: pop_Buildings_6,
+            style: style_Buildings_6_0,
         });
-        bounds_group.addLayer(layer__6);
-        map.addLayer(layer__6);
+        bounds_group.addLayer(layer_Buildings_6);
+        map.addLayer(layer_Buildings_6);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/_6.png" /> Жилая застройка': layer__6,'КД Площадь<br /><table><tr><td style="text-align: center;"><img src="legend/_5_112160.png" /></td><td>1 - 1216 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_121637511.png" /></td><td>1216 - 3751 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_375178212.png" /></td><td>3751 - 7821 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_7821132053.png" /></td><td>7821 - 13205 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_13205194184.png" /></td><td>13205 - 19418 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_19418275025.png" /></td><td>19418 - 27502 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_27502399876.png" /></td><td>27502 - 39987 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_39987530797.png" /></td><td>39987 - 53079 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_530791327468.png" /></td><td>53079 - 132746 </td></tr><tr><td style="text-align: center;"><img src="legend/_5_1327461602329.png" /></td><td>132746 - 160232 </td></tr></table>': layer__5,'КД Стоимость<br /><table><tr><td style="text-align: center;"><img src="legend/_4_1131334890.png" /></td><td>1 - 13133489 </td></tr><tr><td style="text-align: center;"><img src="legend/_4_13133489468495311.png" /></td><td>13133489 - 46849531 </td></tr><tr><td style="text-align: center;"><img src="legend/_4_468495311145963492.png" /></td><td>46849531 - 114596349 </td></tr><tr><td style="text-align: center;"><img src="legend/_4_1145963492511144003.png" /></td><td>114596349 - 251114400 </td></tr><tr><td style="text-align: center;"><img src="legend/_4_2511144008301222784.png" /></td><td>251114400 - 830122278 </td></tr></table>': layer__4,'КД Удельная стоимость<br /><table><tr><td style="text-align: center;"><img src="legend/_3_1131334890.png" /></td><td>1 - 13133489 </td></tr><tr><td style="text-align: center;"><img src="legend/_3_13133489468495311.png" /></td><td>13133489 - 46849531 </td></tr><tr><td style="text-align: center;"><img src="legend/_3_468495311145963492.png" /></td><td>46849531 - 114596349 </td></tr><tr><td style="text-align: center;"><img src="legend/_3_1145963492511144003.png" /></td><td>114596349 - 251114400 </td></tr><tr><td style="text-align: center;"><img src="legend/_3_2511144008301222784.png" /></td><td>251114400 - 830122278 </td></tr></table>': layer__3,'КД Статус<br /><table><tr><td style="text-align: center;"><img src="legend/_2_10.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/_2_51.png" /></td><td>5</td></tr><tr><td style="text-align: center;"><img src="legend/_2_62.png" /></td><td>6</td></tr><tr><td style="text-align: center;"><img src="legend/_2_3.png" /></td><td></td></tr></table>': layer__2,'КД Индекс<br /><table><tr><td style="text-align: center;"><img src="legend/_1_0030020000000.png" /></td><td>003002000000</td></tr><tr><td style="text-align: center;"><img src="legend/_1_0030080000001.png" /></td><td>003008000000</td></tr><tr><td style="text-align: center;"><img src="legend/_1_None2.png" /></td><td>None</td></tr><tr><td style="text-align: center;"><img src="legend/_1_3.png" /></td><td></td></tr></table>': layer__1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Buildings_6.png" /> Buildings ': layer_Buildings_6,'KD Area<br /><table><tr><td style="text-align: center;"><img src="legend/KDArea_5_112160.png" /></td><td>1 - 1216 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_121637511.png" /></td><td>1216 - 3751 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_375178212.png" /></td><td>3751 - 7821 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_7821132053.png" /></td><td>7821 - 13205 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_13205194184.png" /></td><td>13205 - 19418 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_19418275025.png" /></td><td>19418 - 27502 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_27502399876.png" /></td><td>27502 - 39987 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_39987530797.png" /></td><td>39987 - 53079 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_530791327468.png" /></td><td>53079 - 132746 </td></tr><tr><td style="text-align: center;"><img src="legend/KDArea_5_1327461602329.png" /></td><td>132746 - 160232 </td></tr></table>': layer_KDArea_5,'KD Cost<br /><table><tr><td style="text-align: center;"><img src="legend/KDCost_4_1131334890.png" /></td><td>1 - 13133489 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost_4_13133489468495311.png" /></td><td>13133489 - 46849531 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost_4_468495311145963492.png" /></td><td>46849531 - 114596349 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost_4_1145963492511144003.png" /></td><td>114596349 - 251114400 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost_4_2511144008301222784.png" /></td><td>251114400 - 830122278 </td></tr></table>': layer_KDCost_4,'KD Cost2<br /><table><tr><td style="text-align: center;"><img src="legend/KDCost2_3_1131334890.png" /></td><td>1 - 13133489 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost2_3_13133489468495311.png" /></td><td>13133489 - 46849531 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost2_3_468495311145963492.png" /></td><td>46849531 - 114596349 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost2_3_1145963492511144003.png" /></td><td>114596349 - 251114400 </td></tr><tr><td style="text-align: center;"><img src="legend/KDCost2_3_2511144008301222784.png" /></td><td>251114400 - 830122278 </td></tr></table>': layer_KDCost2_3,'KD Status<br /><table><tr><td style="text-align: center;"><img src="legend/KDStatus_2_10.png" /></td><td>1</td></tr><tr><td style="text-align: center;"><img src="legend/KDStatus_2_51.png" /></td><td>5</td></tr><tr><td style="text-align: center;"><img src="legend/KDStatus_2_62.png" /></td><td>6</td></tr><tr><td style="text-align: center;"><img src="legend/KDStatus_2_3.png" /></td><td></td></tr></table>': layer_KDStatus_2,'KD Index<br /><table><tr><td style="text-align: center;"><img src="legend/KDIndex_1_0030020000000.png" /></td><td>003002000000</td></tr><tr><td style="text-align: center;"><img src="legend/KDIndex_1_0030080000001.png" /></td><td>003008000000</td></tr><tr><td style="text-align: center;"><img src="legend/KDIndex_1_None2.png" /></td><td>None</td></tr><tr><td style="text-align: center;"><img src="legend/KDIndex_1_3.png" /></td><td></td></tr></table>': layer_KDIndex_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
         setBounds();
         </script>
     </body>
