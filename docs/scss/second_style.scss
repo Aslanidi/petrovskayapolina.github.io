@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
 // 'Manrope', sans-serif;
+// font-family: 'Roboto', sans-serif;
 
 .wrapper {
      display:flex;
@@ -224,10 +229,24 @@ text-transform: uppercase;
      margin: 0px 0px 0px 20px;
     }
 
+
      &_row {
      display:flex;
      margin: 15px 0px 0px 0px;
      }
+
+     &_maintitle {
+          text-transform: uppercase;
+          color: #000000;
+          font-family: Manrope;
+          font-size: 25px;
+          font-weight: 500;
+          font-style: normal;
+          letter-spacing: normal;
+          line-height: normal;
+          text-align: left;
+          margin: 13px 24px 12px 21px;
+          }
 
      &_title {
      text-transform: uppercase;
@@ -241,6 +260,7 @@ text-transform: uppercase;
      text-align: left;
      margin: 13px 24px 12px 21px;
      }
+
      
      &_links {
      
@@ -249,8 +269,8 @@ text-transform: uppercase;
 
      &_element1 {
      background-color: #eeeff5;
-     flex: 0 1 33.333%;
-     margin: 0px 15px 0px 0px;
+     flex: 0 1 30%;
+     margin: 0% 0% 3% 3%;
      }
 
 .contentlinks {
@@ -271,6 +291,112 @@ padding: 20px;
 color: #7584a3;
 }
 }
+
+
+.content {
+
+&_element2 {
+background-color: #eeeff5;
+flex: 0 1 70%;
+margin: 0% 3% 3% 3%; 
+     }
+}
+
+
+.article {
+
+&_topic {
+background-color: #b8bcd4;
+text-transform: uppercase;
+color: #000000;
+font-family: Manrope;
+font-size: 25px;
+font-weight: 500;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: center;
+margin: 0% 0% 2% 0%;
+     }
+
+&_text {
+color: #000000;
+font-family: Manrope;
+font-size: 15px;
+font-weight: 400;
+font-style: normal;
+letter-spacing: normal;
+line-height: 20px;
+text-align: justify;
+letter-spacing: 0.5px;
+line-height: normal;
+margin: 1% 0% 0% 0%;
+padding: 0% 5% 3% 3%;
+     }
+}
+
+
+.spisok {
+background-color: #FFFFFF;
+padding: 4%; 
+margin: 1% 0% 1% 0%;
+}
+
+
+h5 {
+     color: #000000;
+     font-family: Manrope;
+     font-size: 15px;
+     font-weight: 600;
+     line-height: 20px;
+     text-align: left;
+     text-transform: uppercase;
+     text-align: left;     
+     }
+     
+     
+     
+     .articleimage {
+     margin: 2% 0% 2% 0%;
+     
+     }
+     .articleimg {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     }
+     
+     .imgdesc {
+     color: #000000;
+     font-family: Roboto;
+     font-size: 15px;
+     font-weight: 300;
+     line-height: 20px;
+     text-align: center;
+     margin: 2% 0% 0% 0%;
+     font-style: italic;
+     }
+     
+     span {
+     color: #000000;
+     font-family: Manrope;
+     font-size: 15px;
+     font-weight: 600;
+     line-height: 20px;    
+     }
+
+     .articlelink{
+     color: #000000;
+     font-family: Manrope;
+     font-size: 15px;
+     font-weight: 600;
+     line-height: 20px;
+     text-align: left;
+     }
+
+     .articlelink:hover{
+     color: #7584a3;
+          }
 
 // ФУТЕР 
 .footer__row{

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Frontend crib</title>
+		<link rel="stylesheet" href="/main/scss/reset.css" />
+		<link rel="stylesheet" href="/main/scss/second_style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>	
+<div class="wrapper"> 
+	<div class="container">
+		<!-- Шапка -->
+	<div class="header">
+		<div class="header__row">
+		  <div class="header__element header__element_1">
+			<div class="header__content">
+				<span class="headertitle">Frontend crib</span>
+			</div>
+		  </div>
+		  <div class="header__element header__element_2">
+			<div class="header__content">
+				<nav class="headermenu">
+					<ul class="headerlist">
+						<li><a href="temp/index.html" class="headerlink">Js map</a></li>
+						<li><a href="#" class="headerlink">Html</a></li>
+						<li><a href="#" class="headerlink">CSS</a></li>
+					</ul>
+				</nav>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="mainblock">
+		  <div class="imageblock imageblock">
+			  <div class="imageblock__title1">Frontend crib</div>
+			  <div class="imageblock__title2">Руководство 
+				  <br>
+				  по вёрстке веб-страниц</div>
+			  <div class="imageblock__bg ibg">
+				  <img src="/main/img/mainblockheader.png" alt="Mainblock header">
+			  </div>
+		  </div>
+	  </div>
+
+<div class="content">
+	
+	<div class="content_row">
+       <div class="content_element1">
+		<div class="content_maintitle">Навигация</div>
+		<div class="content_title">Теория</div>
+		<div class="content_links">
+			<a href="#" alt="" class="contentlinks">Что такое Frontend и Backend</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Что такое HTML</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Что такое CSS</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">C чего начать?</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Программное обеспечение</a>
+		</div>
+		<div class="content_title">Html</div>
+		<div class="content_links">
+			<a href="#" alt="" class="contentlinks">Основы</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Контент-теги</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Вёрстка и позиционирование</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Теги форм</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Ссылки и изображения</a>
+		</div>
+		<div class="content_title">CSS</div>
+		<div class="content_links">
+			<a href="#" alt="" class="contentlinks">Обнуляющий стиль</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Стилизация текста</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Margin & padding</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Стили оформления блоков</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Псевдоклассы</a>
+		</div>
+	   </div>
+	   <div class="content_element2">
+		   <div class="content_article">
+		<div class="article_topic">Что такое CSS</div>
+		<div class="article_text">
+			<p><span>CSS</span> (Cascading Style Sheets букв. «Каскадные таблицы стилей») – это один из формальных языков программирование, целью которого является описание оформления внешнего вида HTML документа. </p>
+			<br>
+			<p>Образно говоря, HTML документ представляет собой «скелет», а CSS, в свою очередь – «мышцы» или даже «внешнюю оболочку». </p>		
+		</div>	
+<div class="articleimage">
+	<img src="/main/img/css_example.png" alt="Пример frontend" class="articleimg">
+	<div class="imgdesc">На данной картинке изображен пример сочетания CSS (сверху) и HTML (снизу) кода.</div>
+	</div>
+<br>
+<br>
+
+<div class="article_topic">Достоинства</div>
+
+<div class="article_text">
+	<ul class="spisok">
+	<li>	•	Быстрота разработки;</li>
+	<li>	•	Возможность повторного использования элементов;</li>
+	<li>	•	Гибкость и удобство редактирования;</li>
+	<li>	•	Упрощение кода путем избегания повторов;</li>
+	<li>	•	Ускоряет время загрузки веб-страницы;</li>
+	<li>	•	Увеличивает количество визуальных решений;</li>
+	<li>	•	Гибкая адаптация для мобильных устройств. </li>
+	</ul>
+
+</div>	
+
+<div class="article_topic">Подключение CSS</div>
+<div class="articleimage">
+	<img src="/main/img/css_link.png" alt="Пример frontend" class="articleimg">
+	<div class="imgdesc">Пример ссылки на подключение CSS-документа.</div>
+	</div>
+
+<div class="article_text">
+	<p>Подключить CSS к HTML можно тремя способами: </p>
+	<br>
+	<ul class="spisok">
+		<li>• Внутри тега с помощью атрибута style. При этом нет нужды указывать селектор;</li>
+		<li>• Добавить тег style с атрибутом type="text/css";</li>
+		<li> • Подключить внешнюю таблицу стилей: link rel="stylesheet" href="путь до style.css" type="text/css".</li>
+		</ul>
+	<br>
+	<p>Третий способ является наиболее распространенным, поскольку он позволяет упорядочить «рабочее место», тем самым значительно упрощая и ускоряя работу над кодом. </p>
+</div>
+
+
+<div class="article_topic">Cинтаксис</div>
+<div class="article_text"><p>В отличии от HTML, CSS имеет крайне простую структуру записи: она состоит всего из двух элементов: селектора и блока объявлений. </p></div>
+<div class="articleimage">
+	<img src="/main/img/css_structure.jpeg" alt="Пример frontend" class="articleimg">
+	<div class="imgdesc">Пример ссылки на подключение CSS-документа.</div>
+	</div>
+<div class="article_text">
+	<p>Селектор определяет, к какому элементу HTML документа будут применены свойства, указанные в CSS документе. </p>
+	<br>
+	<p>В таблице каскадных стилей можно обращаться как к типу элемента («div», «p», «a» и т.д.), так и к идентификатору, который является ссылкой на CSS стиль. (div class=”title”). </p>
+	<br>
+	<p>Блок объявлений состоит из пары субэлементов, которые записываются через двоеточие: «свойство: значение». Свойство задает тот или иной аспект (цвет, размер, отступ и т.д.), а значение задает характеристики данного параметра (оттенок, размер в пикселях, процентах и т.д.). </p>
+
+</div>
+</div>	
+</div>
+</div>
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  <!-- Футер -->
+	  <div class="footerbody">
+		<div class="footer">
+			<div class="footer__row">
+			  <div class="footer__element footer__element_3">
+				<div class="footer__content">
+					<a href="https://docs.google.com/forms/d/1hme-Hhip3MLdWGPKEwm2jnNPfroag8BDd6HipMPpGis/edit?usp=sharing" alt="Обратная связь" class="linkfooter">Обратная связь</a>
+					<br>
+					<a href="https://vk.com/ptptrvsk" alt="Контакт1" class="linkfooter">Контакт 1</a>
+					<br>
+					<a href="#" alt="Контакт2" class="linkfooter">Контакт 2</a>
+					<br>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<div class="lastfooter">
+			<p class="footertext2">Студенческий проект</p>
+		</div>
+	</div>
+	  <!-- Окончание контейнера -->
+</div>
+<!-- Окончание враппера -->
+</div>
+	</body>
+</html>
+

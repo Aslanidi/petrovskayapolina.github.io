@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- Заголовок страницы в браузере -->
+		<title>Frontend crib</title>
+		<link rel="stylesheet" href="/main/scss/reset.css" />
+		<link rel="stylesheet" href="/main/scss/second_style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>	
+<div class="wrapper"> 
+	<div class="container">
+		<!-- Шапка -->
+	<div class="header">
+		<div class="header__row">
+		  <div class="header__element header__element_1">
+			<div class="header__content">
+				<span class="headertitle">Frontend crib</span>
+			</div>
+		  </div>
+		  <div class="header__element header__element_2">
+			<div class="header__content">
+				<nav class="headermenu">
+					<ul class="headerlist">
+						<li><a href="temp/index.html" class="headerlink">Js map</a></li>
+						<li><a href="#" class="headerlink">Html</a></li>
+						<li><a href="#" class="headerlink">CSS</a></li>
+					</ul>
+				</nav>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="mainblock">
+		  <div class="imageblock imageblock">
+			  <div class="imageblock__title1">Frontend crib</div>
+			  <div class="imageblock__title2">Руководство 
+				  <br>
+				  по вёрстке веб-страниц</div>
+			  <div class="imageblock__bg ibg">
+				  <img src="/main/img/mainblockheader.png" alt="Mainblock header">
+			  </div>
+		  </div>
+	  </div>
+
+<div class="content">
+	
+	<div class="content_row">
+       <div class="content_element1">
+		<div class="content_maintitle">Навигация</div>
+		<div class="content_title">Теория</div>
+		<div class="content_links">
+			<a href="#" alt="" class="contentlinks">Что такое Frontend и Backend</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Что такое HTML</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Что такое CSS</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">C чего начать?</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Программное обеспечение</a>
+		</div>
+		<div class="content_title">Html</div>
+		<div class="content_links">
+			<a href="#" alt="" class="contentlinks">Основы</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Контент-теги</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Вёрстка и позиционирование</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Теги форм</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Ссылки и изображения</a>
+		</div>
+		<div class="content_title">CSS</div>
+		<div class="content_links">
+			<a href="#" alt="" class="contentlinks">Обнуляющий стиль</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Стилизация текста</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Margin & padding</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Стили оформления блоков</a>
+			<br>
+			<a href="#" alt="" class="contentlinks">Псевдоклассы</a>
+		</div>
+	   </div>
+	   <div class="content_element2">
+		   <div class="content_article">
+		<div class="article_text">
+				<div class="article_topic">Ссылки</div>
+				<p>Немаловажную роль в формировании HTML документов играют ссылки. Они достаточно просты по своей структуре – для создания ссылки необходимо использовать парный тег  &lt;а&gt; с атрибутов href=””. </p>
+				<code><a href="url">link text</a> </code>
+		</div>
+			<div class="article_topic">Атрибуты таргета</div>
+			<div class="article_text">
+				<p>Существует отдельная группа атрибутов, которая регулирует способ открытия ссылки. Рассмотрим их поподробнее: </p>
+				<ul class="spisok">
+					<li><span>_self</span> – этот атрибут описывает состояние всех ссылок по умолчанию. Новая страница открывается в той же вкладке, что и предыдущая;</li>
+					<li><span>_blank</span> – этот атрибут открывает новую страницу в отдельной вкладке;</li>
+					<li><span>_parent</span> – этот атрибут открывает новую страницу непосредственно на «родительской», в виде отдельного окна. </li>
+				</ul>
+			</div>
+		<div class="article_topic">Абсолютные и относительные ссылки</div>
+			<div class="article_text">
+				<p>Ссылки на веб-сайтах принято делить на два вида, в зависимости от их непосредственного источника: </p>
+				<p>Абсолютными ссылками принято называть элементы, которые ссылаются на полный адрес веб-сайта, к примеру:</p> 
+				<code><p><a href="https://www.google.com/">Google</a></p></code>
+				<p>Относительными ссылками принято называть те элементы, которые ссылаются на файлы, которые расположены в одной и той же папке, что и директория сайта. Например: </p>
+				<code><p><a href="html_images.asp">HTML Images</a></p></code>
+				<div class="article_topic">КЛИКАБЕЛЬНЫЕ ИЗОБРАЖЕНИЯ</div>
+				Для того, чтобы создать кликабельное изображение, необходимо поместить тег &lt;img&gt; на место описания (текста ссылки). Это выглядит следующим образом: 
+				<code><a href="default.asp"><img src="smiley.gif" alt="HTML tutorial"></a> </code>
+			</div>
+			<div class="article_topic">E-MAIL ССЫЛКА</div>
+		<div class="article_text">
+				<p>Для того, чтобы настроить отправку e-mail сообщений по клику на ссылку, необходимо заменить атрибут href на mailto:адрес_электронной_почты. </p>
+				<p>Вот так выглядит данный элемент:  </p>
+				<code><a href="mailto:someone@example.com">Send email</a></code>
+		</div>
+			
+			<div class="article_topic">ЗАКЛАДКИ</div>
+			
+			<div class="article_text">
+				<p>В HTML документах существует возможность создавать ссылки-«закладки». Такие ссылки не перенаправляют пользователя на другую страницу, а перемещают его внутри родительской к определенному маячку. </p>
+				<p>Для того, чтобы создать такую структуру, необходимо присвоить определенному элементу атрибут id, после чего указать его в качестве источника внутри элемента ссылки. </p>
+				<div class="articleimage">
+					<img src="/main/img/idexample.jpg" alt="Пример frontend" class="articleimg">
+					<div class="imgdesc">Пример использования ссылок-«закладок» внутри HTML документа. </div>
+				</div>
+				
+			</div>
+			
+
+</div>	
+</div>
+</div>
+</div>
+	</div>
+	</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  <!-- Футер -->
+	  <div class="footerbody">
+		<div class="footer">
+			<div class="footer__row">
+			  <div class="footer__element footer__element_3">
+				<div class="footer__content">
+					<a href="https://docs.google.com/forms/d/1hme-Hhip3MLdWGPKEwm2jnNPfroag8BDd6HipMPpGis/edit?usp=sharing" alt="Обратная связь" class="linkfooter">Обратная связь</a>
+					<br>
+					<a href="https://vk.com/ptptrvsk" alt="Контакт1" class="linkfooter">Контакт 1</a>
+					<br>
+					<a href="#" alt="Контакт2" class="linkfooter">Контакт 2</a>
+					<br>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<div class="lastfooter">
+			<p class="footertext2">Студенческий проект</p>
+		</div>
+	</div>
+	  <!-- Окончание контейнера -->
+</div>
+<!-- Окончание враппера -->
+</div>
+	</body>
+</html>
+
